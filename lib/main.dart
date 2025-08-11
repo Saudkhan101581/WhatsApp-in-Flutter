@@ -1,35 +1,39 @@
 import 'package:flutter/material.dart';
-import 'package:thisproject/MainScreen.dart';
-import 'package:thisproject/SignInScreen.dart';
-import 'ForgetPasswordScreen.dart';
-import 'SignUpscreen.dart';
-import 'SplashScreen.dart';
-
+import 'package:thisproject/view/screens/LoginScreens/Sign-Up2.dart';
+import 'package:thisproject/view/screens/LoginScreens/SignUp3.dart';
+import 'package:thisproject/view/screens/LoginScreens/SignUp4.dart';
+import 'package:thisproject/view/screens/LoginScreens/Sign_Up.dart';
+import 'package:thisproject/view/screens/MainScreen/Calls.dart';
+import 'package:thisproject/view/screens/MainScreen/ChatsScreen.dart';
+import 'package:thisproject/view/screens/MainScreen/Community.dart';
+import 'package:thisproject/view/screens/MainScreen/ScreenConnector.dart';
+import 'package:thisproject/view/screens/MainScreen/Update.dart';
+import 'package:thisproject/view/screens/SplashScreen.dart';
 void main(){
-  runApp(AgeCalculator());
+  runApp(WhatsApp());
 }
-class AgeCalculator extends StatefulWidget {
-  const AgeCalculator({super.key});
+class WhatsApp extends StatefulWidget {
+  const WhatsApp({super.key});
 
   @override
-  State<AgeCalculator> createState() => _AgeCalculatorState();
+  State<WhatsApp> createState() => _WhatsAppState();
 }
 
-class _AgeCalculatorState extends State<AgeCalculator> {
-  @override
-
+class _WhatsAppState extends State<WhatsApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:
-        //MainScreen1()
-      //ForgetPassword()
-      //SignIn()
-      Splash()
-
-
-
+      home: //SignUp2(selectedLanguage: 'English',)
+      //SignUp()
+      Splash(),
+      //Signup3()
+      //Signup4()
+      //chatScreen()
+      //Screenconnector()
+      //Update()
+      //Community()
+      //Calls()
     );
   }
 }
